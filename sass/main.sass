@@ -1,0 +1,45 @@
+@import "vars"
+@import "fonts"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html
+	font-size: 10px
+
+body
+	font-size: 1.6rem
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: $default-font
+	overflow-x: hidden
+	font-weight: normal
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+a
+	color: $accent
+	text-decoration: underline
+	transition: all .2s ease
+	&:hover
+		text-decoration: none
+		color: $accent
+img
+	display: block
+	max-width: 100%
+	height: auto
+	object-fit: cover
+	object-position: center
+
+b, strong
+	font-weight: bold
