@@ -1,5 +1,13 @@
 jQuery(function($) {
 
+	$(window).scroll(function () {
+		if ($(this).scrollTop() != 0) {
+			$('.header').css('background-color', 'rgba(0,0,0, 1)');
+		} else {
+			$('.header').css('background-color', 'rgba(0, 0, 0, .3)');
+		}
+	});
+
 	// Кнопка меню
 	$('.mobile-btn').on('click', function() {
 		$(this).toggleClass('active');
