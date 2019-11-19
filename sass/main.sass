@@ -7,7 +7,8 @@
 ::selection
 	background-color: $accent
 	color: #fff
-
+*
+	box-sizing: border-box
 html
 	font-size: 10px
 
@@ -28,12 +29,12 @@ body
 		&:required:valid
 			border-color: green
 a
-	color: $accent
-	text-decoration: underline
+	color: #fff
+	text-decoration: none
 	transition: all .2s ease
 	&:hover
 		text-decoration: none
-		color: $accent
+		color: $acc-light
 img
 	display: block
 	max-width: 100%
@@ -43,3 +44,135 @@ img
 
 b, strong
 	font-weight: bold
+ul
+	list-style: none
+	padding: 0
+.wrapper
+	max-width: 1170px
+	width: 100%
+	margin: 0 auto
+	padding: 0 15px
+
+.logo
+	max-width: 360px
+
+.mobile-btn
+	width: 50px
+	height: 50px
+	background-color: transparent
+	border: none
+	cursor: pointer
+	margin-right: -7.5px
+	span
+		width: 35px
+		height: 3px
+		background-color: #fff
+		display: block
+		margin: 3px auto
+		transform: rotate(0)
+		opacity: 1
+		transition: all .1s ease-in-out
+	&.active span
+		&:first-child
+			transform: rotate(45deg)
+			position: relative
+			top: 6px
+		&:nth-child(2)
+			opacity: 0
+		&:last-child
+			transform: rotate(-45deg)
+			position: relative
+			top: -6px
+
+.header
+	background-color: rgba(#000, .3)
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	height: 80px
+	z-index: 2
+	&__line
+		height: 80px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		&--right
+			display: flex
+			align-items: center
+		&-login
+			ul
+				display: flex
+				margin-right: 40px
+				li
+					margin: 0 15px
+					a
+						font-size: 1.8rem
+
+.hero
+	min-height: 565px
+	background-size: cover
+	background-position: center
+	position: relative
+	z-index: 1
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		left: 0
+		top: 0
+		right: 0
+		bottom: 0
+		background-color: rgba(#000, .66)
+		z-index: -1
+	&__slider
+		width: 75vw
+		height: 350px
+		background-color: rgba(#fff, .23)
+		position: absolute
+		left: 0
+		bottom: 70px
+		display: flex
+		align-items: center
+	&__slide
+		color: #fff
+		padding-right: 30px
+		&-quote
+			font-size: 2.4rem
+			font-style: italic
+			opacity: .9
+			text-shadow: 5px 5px 5px rgba(#000, .1)
+			margin-bottom: 25px
+		&-autor
+			font-size: 1.8rem
+			font-style: italic
+			text-align: right
+			opacity: .6
+
+
+.slick-dots
+	position: absolute
+	display: flex
+	align-items: center
+	font-size: 0
+	bottom: -40px
+	left: 50vw
+	transform: translateX(-50%)
+	li
+		&.slick-active
+			button
+				border-color: $acc-light
+				background-color: $acc-light
+		button
+			width: 15px
+			height: 15px
+			border-radius: 50%
+			background-color: transparent
+			border: 2px solid #fff
+			cursor: pointer
+			margin: 0 5px
+			outline: 0
+			transition: all .2s ease
+			&:hover
+				border-color: $acc-light
+				background-color: $acc-light
