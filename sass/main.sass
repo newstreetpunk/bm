@@ -257,6 +257,23 @@ section
 	h2
 		margin: 0
 		line-height: 1
+		font-size: 36px
+		font-weight: 600
+		text-transform: uppercase
+		text-align: center
+		padding-bottom: 20px
+		position: relative
+		margin-bottom: 80px
+		&:after
+			content: ''
+			display: block
+			width: 100px
+			height: 4px
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translateX(-50%)
+			background: linear-gradient(to right, $acc-light 0%, $accent 100%)
 
 .my-grid
 	display: flex
@@ -280,7 +297,7 @@ section
 			position: relative
 			.small-descr
 				overflow: hidden
-		h2
+		h3
 			a
 				font-size: 1.4rem
 				color: $text
