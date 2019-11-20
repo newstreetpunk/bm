@@ -404,6 +404,8 @@ section
 		width: 25%
 		padding-right: 30px
 		padding-bottom: 25px
+		&.no-pd
+			padding-right: 0
 		&__title
 			font-size: 1.8rem
 			font-weight: 500
@@ -420,22 +422,28 @@ section
 	&-logo
 		margin-bottom: 35px
 		display: block
+		max-width: 250px
 	&-bottom
 		padding: 12px 0
 		font-size: 12px
 		text-align: center
 		a
-			color: $accent
+			color: $acc-light
 			font-weight: 600
+			opacity: .6
 			&:hover
 				text-decoration: underline
+				opacity: 1
 .tag-link
 	background-color: rgba(#fff, .2)
 	color: #8d8d8d
 	padding: 0 6px
-	margin-right: 5px
-	border-radius: 4px
+	margin-right: 4px
+	border-radius: 2px
 	font-weight: 500
+	display: inline-block
+	margin-bottom: 8px
+	margin-left: 0
 	&:hover
 		background-color: $accent
 		color: #fff
