@@ -254,6 +254,9 @@ ul
 
 section
 	padding: 4.16vmax 0
+	h2
+		margin: 0
+		line-height: 1
 
 .my-grid
 	display: flex
@@ -274,6 +277,7 @@ section
 		.text-block
 			padding: 10px 12px
 			font-size: 12px
+			position: relative
 			.small-descr
 				overflow: hidden
 		h2
@@ -305,4 +309,10 @@ section
 		display: flex
 		align-items: center
 	&__count
-		margin-top: 19px
+		position: absolute
+		width: calc(100% - 30px)
+		left: 15px
+		bottom: 15px
+
+.top-posts
+	background-color: #efeded
