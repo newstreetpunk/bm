@@ -402,8 +402,21 @@ section
 		display: flex
 	&-col
 		width: 25%
-		padding-right: 15px
+		padding-right: 30px
 		padding-bottom: 25px
+		&__title
+			font-size: 1.8rem
+			font-weight: 500
+			margin-bottom: 48px
+			display: block
+	&-menu
+		li
+			margin-bottom: 7px
+			a
+				color: #8d8d8d
+				&:hover
+					color: #fff
+					text-decoration: underline
 	&-logo
 		margin-bottom: 35px
 		display: block
@@ -416,3 +429,13 @@ section
 			font-weight: 600
 			&:hover
 				text-decoration: underline
+.tag-link
+	background-color: rgba(#fff, .2)
+	color: #8d8d8d
+	padding: 0 6px
+	margin-right: 5px
+	border-radius: 4px
+	font-weight: 500
+	&:hover
+		background-color: $accent
+		color: #fff
