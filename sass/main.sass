@@ -220,3 +220,90 @@ ul
 			&:hover
 				border-color: $acc-light
 				background-color: $acc-light
+.btn
+	text-transform: uppercase
+	font-size: 1.8rem
+	padding: 15px 40px
+	font-weight: 300
+	text-decoration: none
+	&-block
+		text-align: center
+		margin-top: 30px
+	&.primary-btn
+		background: linear-gradient(to right, $acc-light 0%, $accent 100%)
+		transition: all .1s
+		box-shadow: 0 0 20px rgba(#000, .2)
+		position: relative
+		z-index: 1
+		display: inline-block
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			top: 0
+			right: 0
+			bottom: 0
+			margin: 2px
+			background-color: transparent
+			z-index: -1
+			transition: all .2s
+		&:hover
+			color: $accent
+			&:before
+				background-color: #fff
+
+section
+	padding: 4.16vmax 0
+
+.my-grid
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	&__item
+		width: 23%
+		box-shadow: 0 0 40px rgba(#000, .3)
+		transition: all .2s ease
+		display: flex
+		flex-direction: column
+		margin-bottom: 3%
+		&:hover
+			box-shadow: 0 0 10px rgba(#000, .3)
+		.img-block
+			img
+				height: 100%
+		.text-block
+			padding: 10px 12px
+			font-size: 12px
+			.small-descr
+				overflow: hidden
+		h2
+			a
+				font-size: 1.4rem
+				color: $text
+				font-weight: 600
+				text-decoration: underline
+				line-height: 1.4
+				display: block
+				&:hover
+					text-decoration: none
+	&.random
+		.my-grid__item:nth-child(even)
+			flex-direction: column-reverse
+
+
+.post-info
+	font-size: 12px
+	font-weight: 500
+	font-style: italic
+	display: flex
+	justify-content: space-between
+	color: lighten($text, 30)
+	img
+		width: 15px
+		margin-right: 5px
+	&__preview
+		display: flex
+		align-items: center
+	&__count
+		margin-top: 19px

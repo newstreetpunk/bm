@@ -25,13 +25,16 @@ jQuery(function($) {
 	});
 	//
 
-	//Высчитываем и добавляем отступ слева при ресайзе слайдеру на главной
+	//Высчитываем и добавляем отступ слева при ресайзе
 	function resize () {
 		var ww = $(window).width(),
 			wWrap = $('.wrapper').width(),
 			pl = (ww - wWrap) / 2;
 
-		$('.hero__slider').css('padding-left', pl)
+		$('.hero__slider').css('padding-left', pl);
+
+		var itemW= $('.my-grid__item').width();
+		$('.my-grid__item .img-block, .my-grid__item .text-block').css('height', itemW)
 	}
 	resize ();
 
