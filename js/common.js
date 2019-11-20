@@ -1,17 +1,27 @@
 jQuery(function($) {
 
-	$(window).scroll(function () {
-		if ($(this).scrollTop() != 0) {
-			$('.header').css('background-color', 'rgba(0,0,0, 1)');
-		} else {
-			$('.header').css('background-color', 'rgba(0, 0, 0, .3)');
-		}
-	});
+	// Применение CSS шапке при скролле
+	if( $(window).width() > 580 ){
+		$(window).scroll(function () {
+			if ($(this).scrollTop() != 0) {
+				$('.header').css('background-color', 'rgba(0,0,0, 1)');
+			} else {
+				$('.header').css('background-color', 'rgba(0, 0, 0, .3)');
+			}
+		});
+	}
+	//
 
 	// Кнопка меню
 	$('.mobile-btn').on('click', function() {
 		$(this).toggleClass('active');
 		$('.header__menu').toggleClass('active');
+	});
+	//
+
+	// Кнопка авторизации
+	$('.login-mobail').on('click', function(){
+		$(this).next().toggleClass('active');
 	});
 	//
 
