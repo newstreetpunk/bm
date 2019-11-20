@@ -206,7 +206,7 @@ ul
 	left: -20px
 	background-color: transparent
 	border: none
-	opacity: .6
+	opacity: .2
 	transition: all .2s ease
 	&:hover
 		opacity: 1
@@ -386,6 +386,33 @@ section
 				background-size: cover
 				transition: all .2s ease
 			&:hover
-				border-color: $acc-light
 				.play-button
 					background-image: url(../img/icons/play-light.png)
+
+.footer
+	background-color: #000
+	padding-top: 50px
+	color: #8d8d8d
+	font-size: 1.4rem
+	hr
+		border: .5px solid #8d8d8d
+		opacity: .1
+		margin: 0
+	&-row
+		display: flex
+	&-col
+		width: 25%
+		padding-right: 15px
+		padding-bottom: 25px
+	&-logo
+		margin-bottom: 35px
+		display: block
+	&-bottom
+		padding: 12px 0
+		font-size: 12px
+		text-align: center
+		a
+			color: $accent
+			font-weight: 600
+			&:hover
+				text-decoration: underline
