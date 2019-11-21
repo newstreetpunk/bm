@@ -23,6 +23,13 @@
 		margin-bottom: 19px
 	.footer-col
 		padding-right: 15px
+	.page-sidebar .page-content
+		width: 70%
+		padding-right: 15px
+	.my-sidebar
+		width: 30%
+	h1
+		font-size: 2.5rem
 
 @media (max-width: 768px)
 	.header__line-login
@@ -76,6 +83,12 @@
 	.footer-col
 		width: 48%
 		padding-right: 0
+	h1
+		font-size: 2rem
+	.page-sidebar .page-content
+		width: 60%
+	.my-sidebar
+		width: 40%
 
 
 @media (max-width: 580px)
@@ -128,3 +141,18 @@
 		margin-bottom: 10px
 	.footer-logo
 		max-width: 60%
+	.page-sidebar
+		flex-direction: column
+	.page-sidebar .page-content
+		width: 100%
+		padding-right: 0
+		&:after
+			display: none
+	.my-sidebar
+		width: 100%
+		padding-right: 0
+		padding-left: 0
+		padding-bottom: 0
+	.my-advertising-block
+		min-height: 50px
+		height: auto
