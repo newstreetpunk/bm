@@ -492,12 +492,13 @@ input
 		display: flex
 		justify-content: space-between
 		.page-content
-			width: 70%
+			width: 75%
 			position: relative
+			padding-right: 20px
 			&:after
 				content: ''
 				display: block
-				height: 90%
+				height: 95%
 				width: 1px
 				background-color: #8d8d8d
 				opacity: .2
@@ -505,7 +506,6 @@ input
 				top: 30px
 				right: 0
 	&-content
-		padding-right: 40px
 		&__thambnail
 			img
 				width: 100%
@@ -519,7 +519,50 @@ h1
 	line-height: 1.2
 
 .my-sidebar
-	width: 27%
+	width: 25%
 	min-height: 500px
 	height: 100%
 	padding: 30px 15px
+	&__item
+		font-weight: 500
+		nav
+			padding-left: 15px
+		ul
+		a
+			color: $text
+			font-size: 1.4rem
+			font-weight: 500
+			display: inline-block
+			margin-bottom: 5px
+			&:hover
+				text-decoration: underline
+				color: $acc-light
+		.tag-link
+			background-color: rgba(#000, .1)
+			&:hover
+				background-color: $accent
+				color: #fff
+				text-decoration: none
+	h2
+		font-size: 1.6rem
+		font-weight: 600
+		margin: 30px 0 15px
+		letter-spacing: 1.2px
+		text-transform: uppercase
+	.last-post
+		a
+			line-height: 1.4
+			margin-bottom: 10px
+			padding-bottom: 10px
+			position: relative
+			&:after
+				content: ''
+				display: block
+				height: 1px
+				width: 100%
+				background-color: #8d8d8d
+				opacity: .2
+				position: absolute
+				bottom: 0
+				left: 0
+
