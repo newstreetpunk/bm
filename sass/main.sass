@@ -28,10 +28,10 @@ body
 	input, textarea
 		border: #666 1px solid
 		outline: none
-		&:focus:required:invalid
-			border-color: red
+		// &:focus:required:invalid
+		// 	border-color: red
 		&:required:valid
-			border-color: green
+			border-color: $accent
 a
 	color: #fff
 	text-decoration: none
@@ -462,3 +462,64 @@ section
 	&:hover
 		background-color: $accent
 		color: #fff
+form.search
+	position: relative
+	button
+		position: absolute
+		width: 30px
+		height: 30px
+		top: 0
+		right: 0
+		z-index: 1
+		opacity: .5
+		background-color: transparent
+		border: none
+		transition: all .2s ease
+		cursor: pointer
+		&:hover
+			opacity: 1
+input
+	border: 1px solid #000
+	padding: 5px 10px
+	width: 100%
+	&:focus
+		border-color: $acc-light
+
+.page
+	padding-top: 80px
+	padding-bottom: 50px
+	&-sidebar
+		display: flex
+		justify-content: space-between
+		.page-content
+			width: 70%
+			position: relative
+			&:after
+				content: ''
+				display: block
+				height: 90%
+				width: 1px
+				background-color: #8d8d8d
+				opacity: .2
+				position: absolute
+				top: 30px
+				right: 0
+	&-content
+		padding-right: 40px
+		&__thambnail
+			img
+				width: 100%
+				height: 300px
+				object-fit: cover
+				object-position: center
+				margin-top: 15px
+				margin-bottom: 30px
+h1
+	font-size: 3.1rem
+	line-height: 1.2
+
+.my-sidebar
+	width: 27%
+	min-height: 500px
+	height: 100%
+	padding: 30px 15px
