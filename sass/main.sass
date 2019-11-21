@@ -368,10 +368,12 @@ section
 	background-color: #efeded
 
 .video
-	&-block
+	&__block
 		display: flex
-		justify-content: space-between
 		flex-wrap: wrap
+		.video__item
+			width: 33%
+			margin-bottom: 3%
 	&__slider
 		.slick-dots li button
 			border-color: $acc-light
@@ -595,7 +597,7 @@ h1
 	&.full-width
 		min-height: 50px
 		height: auto
-		margin: 30px 0 10px
+		margin: 30px 0
 		padding: 15px
 
 
