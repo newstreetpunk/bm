@@ -1,5 +1,4 @@
 @import "vars"
-@import "fonts"
 
 ::placeholder
 	color: #666
@@ -33,12 +32,12 @@ body
 		&:required:valid
 			border-color: $accent
 a
-	color: #fff
+	color: $acc-light
 	text-decoration: none
 	transition: all .2s ease
 	&:hover
 		text-decoration: none
-		color: $acc-light
+		color: $text
 img
 	display: block
 	max-width: 100%
@@ -55,6 +54,10 @@ ul
 
 h1, h2, h3, h4, h5, h6
 	font-family: $h-font
+
+p
+	margin-top: 0
+	margin-bottom: 10px
 
 .wrapper
 	max-width: 1170px
@@ -130,6 +133,9 @@ h1, h2, h3, h4, h5, h6
 					margin: 0 10px
 					a
 						font-size: 1.8rem
+						color: #fff
+						&:hover
+							color: $acc-light
 	&__menu
 		position: fixed
 		top: 0
@@ -159,6 +165,7 @@ h1, h2, h3, h4, h5, h6
 					padding-left: 30px
 					text-transform: uppercase
 					font-weight: 500
+					color: #fff
 
 .isnohome
 	.header
@@ -407,17 +414,16 @@ section
 			&:hover
 				.play-button
 					background-image: url(../img/icons/play-light.png)
-
+hr
+	border: .5px solid #8d8d8d
+	opacity: .1
+	margin: 0
 .footer
 	background-color: #000
 	padding-top: 50px
 	color: #8d8d8d
 	font-size: 1.4rem
 	flex: 0 0 auto
-	hr
-		border: .5px solid #8d8d8d
-		opacity: .1
-		margin: 0
 	&-row
 		display: flex
 		justify-content: space-between
@@ -431,7 +437,7 @@ section
 		&__title
 			font-size: 1.8rem
 			font-weight: 500
-			margin-bottom: 48px
+			margin-bottom: 42px
 			display: block
 	&-menu
 		li
@@ -605,4 +611,28 @@ h1
 		margin: 30px 0
 		padding: 15px
 
+.category-posts
+	h2
+		margin-bottom: 5px
 
+.about
+	&-block
+		display: flex
+		justify-content: space-between
+		margin-top: 30px
+		.my-photo
+			width: 340px
+			height: 340px
+			border-radius: 50%
+			overflow: hidden
+			background: linear-gradient(to right, $acc-light 0, $accent 100%)
+			flex: 0 0 340px
+			img
+				width: 332px
+				height: 332px
+				border-radius: inherit
+				overflow: hidden
+				margin: 4px
+
+		.about__me
+			width: 65%
