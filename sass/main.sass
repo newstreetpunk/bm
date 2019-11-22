@@ -522,6 +522,7 @@ input
 	border: 1px solid #000
 	padding: 5px 10px
 	width: 100%
+	margin-bottom: 15px
 	&:focus
 		border-color: $acc-light
 
@@ -676,3 +677,31 @@ h1
 		background-size: cover
 		background-position: center
 		margin-top: 80px
+
+.form-modal
+	max-width: 400px
+	width: 100%
+	height: auto
+	padding: 20px 15px
+	background-color: #fff
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	h3
+		text-transform: uppercase
+		text-align: center
+	form
+		input
+			padding: 10px
+		button
+			border: none
+			width: 100%
+			text-align: center
+			margin-top: 10px
+			cursor: pointer
+	small
+		font-size: 1.2rem
+		line-height: 1.4
+		display: block
+		margin-top: 20px
