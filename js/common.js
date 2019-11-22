@@ -1,5 +1,14 @@
 jQuery(function($) {
 
+	// Высота заголовка и описания карточки услуги
+	if( $(window).width() > 580 ){
+		$('.my-grid.services-grid').each(function() {
+			$(this).children('.my-grid__item.service').find('h3').equalHeights();
+			$(this).children('.my-grid__item.service').find('.text-block .small-descr').equalHeights();
+		});
+	}
+	//
+
 	//Видео слайдер
 	$('.video__slider').slick({
 		slidesToShow: 3,
@@ -85,9 +94,8 @@ jQuery(function($) {
 
 		if ( ww > 580 ){
 			var itemW= $('.my-grid__item').width();
-			$('.my-grid__item .img-block, .my-grid__item .text-block').css('height', itemW);
-		}
-		
+			$('.post .img-block, .post .text-block').css('height', itemW);
+		}		
 	}
 	resize ();
 

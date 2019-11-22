@@ -267,6 +267,13 @@ p
 	font-weight: 300
 	text-decoration: none
 	color: #fff
+	&.small-btn
+		padding: 5px 0
+		width: 80%
+		margin: 0 auto
+		margin-bottom: 20px
+		text-transform: none
+		text-align: center
 	&-block
 		text-align: center
 		margin-top: 30px
@@ -342,6 +349,7 @@ section
 			position: relative
 			.small-descr
 				overflow: hidden
+				display: block
 		h3
 			a
 				font-size: 1.4rem
@@ -353,6 +361,24 @@ section
 				display: block
 				&:hover
 					text-decoration: none
+		&.service
+			.small-btn
+				display: block
+				width: 100%
+				margin-bottom: 0
+			h3
+				text-transform: uppercase
+			.service-price
+				font-family: $h-font
+				font-weight: bold
+				display: block
+				text-align: center
+				margin: 5px 0 15px
+				font-size: 2.5rem
+			.img-block
+				height: 150px
+				background-size: cover
+				background-position: center
 	&.random
 		.my-grid__item:nth-child(even)
 			flex-direction: column-reverse
@@ -637,3 +663,16 @@ h1
 
 		.about__me
 			width: 65%
+
+.services
+	padding-top: 20px
+	&-grid
+		justify-content: flex-start
+		.my-grid__item.service
+			width: 23%
+			margin-right: 2%
+	&-bg
+		height: 450px
+		background-size: cover
+		background-position: center
+		margin-top: 80px

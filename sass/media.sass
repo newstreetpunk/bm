@@ -8,14 +8,24 @@
 	.my-grid__item .text-block .small-descr
 		font-size: 1.1rem
 		line-height: 1.4
+	.my-grid__item.service .text-block .small-descr
+		font-size: 1.4rem
+		line-height: inherit
 
 
 @media (max-width: 992px)
 	.my-grid__item
 		width: 30%
 		margin: 0 1.5% 3%
+	.services-grid .my-grid__item.service
+		width: 31%
+		margin-right: 2%
+		margin-left: 0
+		margin-bottom: 2%
 	.my-grid
 		justify-content: center
+	.my-grid.services-grid
+		justify-content: flex-start
 	.footer
 		font-size: 1.2rem
 	.footer-logo
@@ -47,6 +57,8 @@
 
 
 @media (max-width: 768px)
+	.services-bg
+		height: 250px
 	.header__line-login
 		position: fixed
 		top: 80px
@@ -104,6 +116,8 @@
 		width: 60%
 	.my-sidebar
 		width: 40%
+	.services-grid .my-grid__item.service
+		width: 48%
 
 
 @media (max-width: 580px)
@@ -141,6 +155,8 @@
 					width: 100%
 	.my-grid__item .text-block
 		padding-bottom: 50px
+	.services-grid .my-grid__item.service .text-block
+		padding-bottom: 12px
 	section h2
 		margin-bottom: 40px
 		margin-top: 15px
@@ -187,3 +203,7 @@
 		img
 			width: 272px
 			height: 272px
+	.services-grid .my-grid__item.service
+		width: 100%
+		margin-right: 0
+		margin-bottom: 20px
