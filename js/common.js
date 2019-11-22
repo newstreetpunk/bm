@@ -1,5 +1,16 @@
 jQuery(function($) {
 
+
+	$('.advertising-item .advertising-item__size').each(function (){
+		var ths = $(this),
+			aHgth = ths.children('span:nth-child(2)').text(),
+			aWdth = ths.children('span:nth-child(1)').text();
+		ths.parent().css({
+			width: aWdth,
+			height: aHgth
+		});
+	});
+
 	//Добавляем атрибут кнопке заказать равный заголовку карточке
 	$('.my-grid.services-grid .my-grid__item.service').each(function() {
 		var servCard = $(this),
