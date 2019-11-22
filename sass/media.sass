@@ -11,6 +11,8 @@
 	.my-grid__item.service .text-block .small-descr
 		font-size: 1.4rem
 		line-height: inherit
+	.investments__item-info
+		padding-top: 10px
 
 
 @media (max-width: 992px)
@@ -118,6 +120,13 @@
 		width: 40%
 	.services-grid .my-grid__item.service
 		width: 48%
+	.investments__item, .investments__item:nth-child(even)
+		flex-direction: column
+	.investments__item-img
+		width: 100%
+	.investments__item:nth-child(even) .investment-read
+		left: auto
+		right: 20px
 
 
 @media (max-width: 580px)
