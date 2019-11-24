@@ -24,6 +24,10 @@ jQuery(function($) {
 		fixedContentPos: false
 	});
 
+	$('.modal-form-link').magnificPopup({
+		fixedContentPos: false
+	});
+
 	$('.serv-modal-link').click(function(){
 		var ths = $(this),
 			dataTitle = ths.data('title');

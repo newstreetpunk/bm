@@ -614,8 +614,9 @@ h1
 	height: auto
 	padding: 30px 15px
 	min-height: 320px
-	background-color: rgba($acc-light, .5)
-	color: #fff
+	background-color: #f0f0f0
+	color: #000
+	opacity: .6
 	position: relative
 	display: flex
 	align-items: center
@@ -624,7 +625,8 @@ h1
 	text-align: center
 	line-height: 1.4
 	a
-		color: #fff
+		color: #000
+		opacity: .6
 		position: absolute
 		right: 15px
 		bottom: 5px
@@ -671,7 +673,7 @@ h1
 			width: 23%
 			margin-right: 2%
 	&-bg
-		height: 450px
+		height: 350px
 		background-size: cover
 		background-position: center
 		margin-top: 80px
@@ -780,12 +782,17 @@ small
 		display: flex
 		justify-content: center
 		align-items: center
+		flex-direction: column
 		position: relative
 		margin: 15px 0
 		margin-right: 30px
 		&__size
 			font-size: 2.5rem
 			color: #000
+			opacity: .6
+		&__price
+			display: block
+			text-align: center
 			opacity: .6
 		.advertising-item-link
 			position: absolute
